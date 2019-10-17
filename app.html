@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Game Kill the Fly</title>
+        <script src="configs.js"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body onresize="adjustingSize()">
+
+        <div class="panel">
+            <div class="lifes">
+                <img id="l1" src="./imagens/coracao_cheio.png">
+                <img id="l2" src="./imagens/coracao_cheio.png">
+                <img id="l3" src="./imagens/coracao_cheio.png">
+            </div>
+            <div class="timer">Tempo Restante <span id='timer'></span></div>
+            
+        </div>
+        
+        <script>
+            document.getElementById('timer').innerHTML = time
+            randomPosition()
+
+            var createFly = setInterval(function() {
+                randomPosition()
+            }, flyCreateTimer)
+        </script>
+    </body>
+</html>
