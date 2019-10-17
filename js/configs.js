@@ -54,7 +54,7 @@ function randomPosition (){
         if (lifes === 3) {
             window.location.href = 'game_over.html'
         } else {
-            document.getElementById('l' + lifes).src= './imagens/coracao_vazio.png'
+            document.getElementById('l' + lifes).src= './src/coracao_vazio.png'
 
             lifes ++
         }
@@ -71,7 +71,7 @@ function randomPosition (){
 
     // Criar o elemento html
     var fly = document.createElement("img")
-    fly.src = './imagens/mosca.png' 
+    fly.src = './src/mosca.png' 
     fly.className = flyRandomSize () + ' ' + flyRandomSide ()
     fly.style.left = positionX + 'px'
     fly.style.top = positionY + 'px'
