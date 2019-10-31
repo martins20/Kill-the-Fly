@@ -1,7 +1,6 @@
 var height = 0
 var width = 0
 var lifes = 1
-var time = 25
 var time = 10
 
 var flyCreateTimer = 1500
